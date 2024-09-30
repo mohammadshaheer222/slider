@@ -87,11 +87,8 @@ export default function App() {
 
   return (
     <div>
-      <div id="home" ref={homeRef} className="h-screen bg-yellow-200">
-          Body Section
-        </div>
       {/* Fixed Slider */}
-      <div className="">
+      <div className="fixed top-0 left-0 w-full z-10">
         <Slider {...settings} ref={sliderRef}>
           <div className="px-6 py-2 bg-gray-200">
             <h1>Home</h1>
@@ -106,7 +103,7 @@ export default function App() {
       </div>
 
       {/* Page content sections */}
-      <div className="">
+      <div className="mt-24">
         <div id="home" ref={homeRef} className="h-screen bg-red-200">
           Home Section
         </div>
